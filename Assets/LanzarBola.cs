@@ -28,6 +28,7 @@ public class LanzarBola : MonoBehaviour {
             GameObject disparo = GameObject.Find("Disparo");
             AudioSource audioSource = disparo.GetComponent<AudioSource>();
             audioSource.Play();
+
 			GameObject bullets = GameObject.Find("bullets");
 			AudioSource bulletsSource = bullets.GetComponent<AudioSource>();
 			bulletsSource.Play();
