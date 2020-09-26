@@ -9,7 +9,6 @@ public class DetectarColision : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         Debug.Log("inicio");
-		
 	}
 	
 	// Update is called once per frame
@@ -25,6 +24,6 @@ public class DetectarColision : MonoBehaviour {
 			Puntaje puntajeScript = puntaje.GetComponent<Puntaje>();
 			puntajeScript.addPuntaje();
             
-        }
+        }	
 	}
 }
