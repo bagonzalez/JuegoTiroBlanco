@@ -21,7 +21,10 @@ public class LanzarBola : MonoBehaviour {
 		
 			GameObject nuevaBola = Instantiate(bola);
 			nuevaBola.transform.position = playerCamera.transform.position;
-			nuevaBola.transform.rotation = new Quaternion(0.0f, playerCamera.transform.rotation.y, 0.0f, playerCamera.transform.rotation.w);
+			nuevaBola.transform.rotation = new Quaternion(0.0f, 
+													playerCamera.transform.rotation.y, 
+													0.0f, 
+													playerCamera.transform.rotation.w);
 			Rigidbody nuevobody = nuevaBola.GetComponent<Rigidbody>();
 			nuevobody.velocity = playerCamera.transform.forward * velocidadBola;
 

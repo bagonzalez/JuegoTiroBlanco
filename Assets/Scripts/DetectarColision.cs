@@ -8,12 +8,13 @@ public class DetectarColision : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        Debug.Log("inicio");
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+	}
+
+	void FixedUpdate() { 
 	}
 
 	void OnCollisionEnter(Collision collision)
@@ -22,8 +23,12 @@ public class DetectarColision : MonoBehaviour {
 
         if(collision.gameObject.tag == "bola"){
 			Puntaje puntajeScript = puntaje.GetComponent<Puntaje>();
-			puntajeScript.addPuntaje();
-            
+			puntajeScript.addPuntaje();            
         }	
+	}
+
+	void OnCollisionStay(Collision collision){
+		Debug.Log("Colision Objeto" + collision.gameObject.name);
+
 	}
 }
