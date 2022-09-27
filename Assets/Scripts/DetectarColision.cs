@@ -21,7 +21,7 @@ public class DetectarColision : MonoBehaviour {
 	{
         Debug.Log("Colision Objeto" + collision.gameObject.name);
 
-        if(collision.gameObject.tag == "bola"){
+        if(collision.gameObject.tag == "Terrain"){
 			Puntaje puntajeScript = puntaje.GetComponent<Puntaje>();
 			puntajeScript.addPuntaje();            
         }	
